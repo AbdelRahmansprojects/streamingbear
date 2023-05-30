@@ -1,0 +1,373 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background: #272727;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+form {
+  margin:auto;
+}
+
+#greenthetext{
+  width:300px;
+  height: 40px;
+    border:3px solid black;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+    
+}
+
+#greenthetext:focus{
+  border-color:lime;
+  box-shadow:0 0 8px 0 dodgerBlue;
+}
+
+#redthetext{
+    width:300px;
+    height: 40px;
+    border:3px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+}
+
+#redthetext:focus{
+  border-color:red;
+  box-shadow:0 0 8px 0 red;
+}
+
+
+#myH1{
+  color:lime;
+  /* font-family: 'Roboto', sans-serif; */
+  font-size: 40px;
+  font-family: 'Press Start 2P'
+  
+}
+
+#individualchat{
+  font-family: Consolas,monaco,monospace; 
+}
+
+#mylabel{
+  font-family: 'Work Sans', sans-serif;
+}
+
+#secondpart{
+  display: none;
+}
+
+.body{
+  color:white;
+}
+
+#disprompt{
+  color:greenyellow;
+  font-family: 'Roboto'
+}
+
+#half-red-half-green {
+  background: linear-gradient(to right, red 50%, lime 50%);
+  color: white; /* optional, sets text color to white */
+}
+
+.rainbow {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 10vw;
+  font-family: monospace;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+
+  
+}
+
+.rainbow_text_animated {
+  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
+  
+
+}
+
+@keyframes rainbow_animation {
+  0%,100% {
+      background-position: 0 0;
+  }
+
+  50% {
+      background-position: 100% 0;
+  }
+}
+
+.navbut{
+  border-radius:10px;
+  height:50px;
+  width: 250px;
+  row-gap: 10px;
+  font-size: 15px;
+  column-gap: 10px;
+  font-weight: bolder;
+  transition: all 0.2s ease-in-out 0s;
+
+}
+.navbut:hover {
+  color: white;
+  transform: translateY(-6px);
+  background-color: lightgrey;
+}
+.navbut::before{
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+
+.button:hover, .button:focus {
+  color: white;
+  transform: translateY(-6px);
+}
+
+#box{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  
+}
+
+
+/* --------------------------------- */
+
+#myform{
+  display: block;
+  position: relative;
+  top: 50px;
+}
+
+#secondpart{
+  display: none;
+}
+
+#twitchchat{
+  display: none;
+}
+
+/* ------------------------------------------------- */
+
+/* CSS */
+.button-73:nth-of-type(1) {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: lime;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width:150px;
+}
+
+.button-73:nth-of-type(2){
+  appearance: none;
+  background-color: #FFFFFF;
+  width:150px;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: lime;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-73:nth-of-type(1):hover {
+  background-color: lime;
+  box-shadow: lime;
+  transform: scale(1.125);
+  color: white;
+}
+
+.button-73:nth-of-type(2):hover{
+  background-color: red;
+  box-shadow: red;
+  transform: scale(1.125);
+  color: white;
+}
+
+.button-73:active {
+  transform: scale(1.025);
+}
+
+.progress-container {
+  margin: auto;
+  width: 100%;
+  height: 2px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color:#a86ff7 ;
+  width: 10%;
+  transition: width 0.1s ease-in-out;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .button-73 {
+    font-size: 1.5rem;
+    padding: .75rem 2rem;
+  }
+}
+
+.wrap {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  position: relative;
+  top: 90px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  min-width: 300px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: white;
+  background: #6441a5;
+background: linear-gradient(90deg, #6441a5 0%, #6441a5 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px #a857ff;
+  /* black */
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+.button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid black;
+  box-shadow: 0 0 60px #a857ff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+  color: white;
+  transform: translateY(-6px);
+}
+
+.button:hover::before, .button:focus::before {
+  opacity: 1;
+}
+
+
+
+#thetext{
+  color: white;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"); */
