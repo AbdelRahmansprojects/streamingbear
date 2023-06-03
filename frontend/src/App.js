@@ -102,7 +102,7 @@ function App(){
   });
   
   if(!Cookies.get("mycode")){
-    window.location.href="http://localhost:3000/login"
+    window.location.href="http://streamingbear.up.railway.up/login"
   }
 
 
@@ -212,7 +212,7 @@ function App(){
   bc.addEventListener("message",(event)=>{
       if(event.data=="logout"){
         document.cookie = 'mycode=; expires=Thu, 01 Jan 1970 00:00:01 GMT';
-        window.location.href="http://localhost:3000/login"
+        window.location.href="http://streamingbear.up.railway.app/login"
       }
   })
 
@@ -221,7 +221,7 @@ function App(){
     bc.postMessage('logout');
     // socket.emit("removearraywiththiscode", Cookies.get("mycode"))
     // nmight store codes that will not get used for a long time because will never log out
-    window.location.href="http://localhost:3000/login"
+    window.location.href="http://streamingbear.up.railway.app/login"
     
   }
 
