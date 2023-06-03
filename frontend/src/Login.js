@@ -22,22 +22,22 @@ export function Login(){
 
     logi.addEventListener("message",(event)=>{
         if(event.data=="login"){
-            window.location.href="http://localhost:3000"
+            window.location.href="http://streamingbear.up.railway.app"
         }
     })
 
     if (Cookies.get("mycode")) {
         logi.postMessage("login")
-        window.location.href="http://localhost:3000"
+        window.location.href="http://streamingbear.up.railway.app"
         
     }
 
     const login = (e)=>{
         e.preventDefault()
         if(!Cookies.get("mycode")){
-            window.location.href=`https://id.twitch.tv/oauth2/authorize?client_id=q6ccgfkr2dcjbgw3ud05m2a4k11oxd&redirect_uri=http://localhost:3000/Loadingtoken&response_type=code&scope=chat:edit+chat:read+user_read+channel:moderate+moderation:read+moderator:manage:banned_users&force_verify=true&state=${state}`
+            window.location.href=`https://id.twitch.tv/oauth2/authorize?client_id=q6ccgfkr2dcjbgw3ud05m2a4k11oxd&redirect_uri=http://streamingbear.up.railway.app/Loadingtoken&response_type=code&scope=chat:edit+chat:read+user_read+channel:moderate+moderation:read+moderator:manage:banned_users&force_verify=true&state=${state}`
         }else{
-            window.location.href="http://localhost:3000"
+            window.location.href="http://streamingbear.up.railway.app"
         }
     }  
 
