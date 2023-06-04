@@ -102,7 +102,7 @@ function App(){
   });
   
   if(!Cookies.get("mycode")){
-    window.location.href="http://streamingbear.up.railway.up/login"
+    window.location.href="http://streamingbear.up.railway.app/login"
   }
 
 
