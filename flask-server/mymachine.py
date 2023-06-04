@@ -578,7 +578,7 @@ async def hascon(sid,data):
                 "client_secret": "moa9wyp354a19uj6einp42n7vp7krt",
                 "code": data,
                 "grant_type": "authorization_code",
-                "redirect_uri": "http://localhost:3000/Loadingtoken" 
+                "redirect_uri": "http://streamingbear.up.railway.app/Loadingtoken" 
             }) as response:
                 response_json = await response.json()
 
