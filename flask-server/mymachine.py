@@ -231,7 +231,7 @@ response = requests.post("https://id.twitch.tv/oauth2/token", params={
     "code": "i933x4u7n7wmkolqrtunagid3tuotz",
     "grant_type": "authorization_code",
     "redirect_uri": "http://streamingbear.up.railway.app/Loadingtoken" 
-}
+})
 
 
 
