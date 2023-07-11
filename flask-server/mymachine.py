@@ -225,21 +225,21 @@ async def handleselect(sid,data, textdata,code):
 
 # -----------------------------------USE THIS TO GET A NEW REFRESH TOKEN-------------------------------------------------------------------------------------
 
-# response = requests.post("https://id.twitch.tv/oauth2/token", params={
-#     "client_id": os.environ["CLIENT_ID"],
-#     "client_secret": "moa9wyp354a19uj6einp42n7vp7krt",
-#     "code": "i933x4u7n7wmkolqrtunagid3tuotz",
-#     "grant_type": "authorization_code",
-#     "redirect_uri": "http://localhost:3000/Loadingtoken" 
-# }
+response = requests.post("https://id.twitch.tv/oauth2/token", params={
+    "client_id": os.environ["CLIENT_ID"],
+    "client_secret": "moa9wyp354a19uj6einp42n7vp7krt",
+    "code": "i933x4u7n7wmkolqrtunagid3tuotz",
+    "grant_type": "authorization_code",
+    "redirect_uri": "http://streamingbear.up.railway.app/Loadingtoken" 
+}
 
 
 
-# # Parse the response JSON to get the access token and refresh token.
-# response_json = response.json()
-# print(response_json)
-# access_token = response_json["access_token"]
-# refresh_token = response_json["refresh_token"]
+# Parse the response JSON to get the access token and refresh token.
+response_json = response.json()
+print(response_json)
+access_token = response_json["access_token"]
+refresh_token = response_json["refresh_token"]
 
 # ----------------------------------------------------------------------------------------------------------------------------
 
