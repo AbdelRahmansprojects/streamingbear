@@ -25,7 +25,7 @@ export function Loadingtoken(){
 
         // socket.emit("bottoken", code)
 
-        // window.location.href="http://streamingbear.up.railway.app"
+        window.location.href="http://streamingbear.up.railway.app"
 
         // socket.on("redirect",()=>{
         //     Cookies.set('mycode', code);
