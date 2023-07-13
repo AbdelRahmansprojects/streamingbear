@@ -35,7 +35,7 @@ export function Login(){
     const login = (e)=>{
         e.preventDefault()
         if(!Cookies.get("mycode")){
-            window.location.href=`https://id.twitch.tv/oauth2/authorize?client_id=q6ccgfkr2dcjbgw3ud05m2a4k11oxd&redirect_uri=http://streamingbear.up.railway.app/Loadingtoken&response_type=code&scope=chat:edit+chat:read+user_read+channel:moderate+moderation:read+moderator:manage:banned_users&force_verify=true&state=${state}`
+            window.location.href=`https://id.twitch.tv/oauth2/authorize?client_id=q6ccgfkr2dcjbgw3ud05m2a4k11oxd&redirect_uri=https://streamingbear.up.railway.app/Loadingtoken&response_type=code&scope=chat:edit+chat:read+user_read+channel:moderate+moderation:read+moderator:manage:banned_users&force_verify=true&state=${state}`
         }else{
             window.location.href="http://streamingbear.up.railway.app"
         }
