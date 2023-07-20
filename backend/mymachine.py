@@ -1,4 +1,3 @@
-from flask import Flask, jsonify,request
 from dotenv import load_dotenv
 load_dotenv()
 from twitchio.ext import commands
