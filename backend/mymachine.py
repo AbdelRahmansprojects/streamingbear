@@ -1,5 +1,4 @@
-from dotenv import load_dotenv
-load_dotenv()
+
 from twitchio.ext import commands
 import os
 import asyncio
