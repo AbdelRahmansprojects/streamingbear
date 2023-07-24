@@ -4,7 +4,7 @@
       "builder": "NIXPACKS"
     },
     "deploy": {
-      "startCommand": "gunicorn main:my_web_app --worker-class aiohttp.GunicornWebWorker --workers 3",
+      "startCommand": "gunicorn mymachine:app --worker-class aiohttp.GunicornWebWorker --workers 3",
       "healthcheckPath": "/health"
     }
   }
