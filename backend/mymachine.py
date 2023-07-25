@@ -2,7 +2,7 @@ from twitchio.ext import commands
 import os
 import asyncio
 from threading import Thread
-from sklearn.model_selection import train_test_split
+#from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, recall_score, precision_score, f1_score
 import torch
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
