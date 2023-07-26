@@ -5,8 +5,18 @@ name = "pypi"
 
 [packages]
 twitchio = "*"
-aiohttp = "==3.8.4"
+aiohttp = "*"
 gunicorn = "==20.1.0"
+asyncio = "*"
+numpy = "*"
+scikit-learn = "*"
+torch = "*"
+transformers = "*"
+flask-cors = "*"
+flask-socketio = "*"
+requests = "*"
+python-socketio = "*"
+python-dotenv = "*"
 
 [dev-packages]
 
