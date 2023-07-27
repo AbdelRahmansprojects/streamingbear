@@ -5,6 +5,7 @@ from threading import Thread
 #from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, recall_score, precision_score, f1_score
 import torch
+import numpy as np
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 from transformers import TrainingArguments, Trainer, AutoModel, AdamW,pipeline
 from transformers import BertTokenizer, BertForSequenceClassification
@@ -209,6 +210,9 @@ async def handleselect(sid,data, textdata,code):
 
     username=getusernamefromcode(code)
     banmodel=getbanmodelfromcode(code)
+
+    device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+    banmodel.to(device)
 
     loop = asyncio.get_event_loop()
     with concurrent.futures.ThreadPoolExecutor() as pool:
@@ -540,8 +544,15 @@ def get_model(username):
         
     else:
 
+        device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+
         model = BertForSequenceClassification.from_pretrained('bert-base-uncased')
+
+        model.to(device)
+
         banmodel = BertForSequenceClassification.from_pretrained('bert-base-uncased',num_labels=10)
+        
+        banmodel.to(device)
         
         os.makedirs(username + "/CustomModel", exist_ok=True)
         os.makedirs(username + "/banmodel", exist_ok=True)
@@ -879,6 +890,8 @@ def train_and_update_model(model, parseddata, code, username,number):
 async def handletheyes(sid,data, mytwitch, code):
 
     model=getmodelfromcode(code)
+    device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+    model.to(device)
 
     # print(mytwitcvbnh)
     
@@ -906,6 +919,8 @@ async def handletheyes(sid,data, mytwitch, code):
 async def handletheno(sid,data,mytwitch,code):
 
     model=getmodelfromcode(code)
+    device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+    model.to(device)
 
     parseddata = json.loads(data)
     mytwitch = [x for x in mytwitch if x["chat"] != json.loads(data)]
