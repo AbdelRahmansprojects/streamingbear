@@ -1,4 +1,6 @@
-Check out my loom https://www.loom.com/share/6aab650ace0d4be3a2955233ebcb1d90 showing I'm:
+Less than 5 minute video showcasing project https://www.loom.com/share/6aab650ace0d4be3a2955233ebcb1d90:
+
+This shows I'm:
 
 1) Extremely good at communicating
 2) Incredibly hardworking and self motivated
